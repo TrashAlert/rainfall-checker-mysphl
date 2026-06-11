@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="${pageContext.request.contextPath}/" class="brand">&#127783; MY &amp; PH Rainfall</a>
+        <a href="${pageContext.request.contextPath}/" class="brand"> MY &amp; PH Rainfall</a>
         <a href="${pageContext.request.contextPath}/pages/dataset_home.jsp" class="active">M3 Import &amp; Data</a>
         <a href="${pageContext.request.contextPath}/pages/analysis.jsp">M1 &amp; M2 Analysis</a>
         <a href="${pageContext.request.contextPath}/export">M4 Export</a>
@@ -20,7 +20,7 @@
 
         <div class="grid-2">
             <div class="card">
-                <div class="card-title">&#128228; Import CSV Dataset</div>
+                <div class="card-title"> Import CSV Dataset</div>
                 <p style="color:var(--text-muted); font-size:13px; margin-bottom:20px;">
                     Upload a Malaysia (MY) or Philippines (PH) CSV file.
                     Country is automatically detected from the PCODE column.
@@ -62,7 +62,7 @@
             </div>
 
             <div class="card">
-                <div class="card-title">&#9989; Preprocessing &amp; Validation Rules</div>
+                <div class="card-title"> Preprocessing &amp; Validation Rules</div>
                 <table style="font-size:13px;">
                     <thead>
                         <tr><th>Rule</th><th>Condition</th><th>Action</th></tr>
@@ -80,7 +80,7 @@
 
                 <div style="margin-top:20px;">
                     <a href="${pageContext.request.contextPath}/dataset" class="btn btn-ghost">
-                        &#128203; Browse Existing Records &rarr;
+                         Browse Existing Records &rarr;
                     </a>
                 </div>
             </div>

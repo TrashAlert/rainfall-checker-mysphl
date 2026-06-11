@@ -24,7 +24,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="<%=request.getContextPath()%>/" class="brand">&#127783; MY &amp; PH Rainfall</a>
+        <a href="<%=request.getContextPath()%>/" class="brand"> MY &amp; PH Rainfall</a>
         <a href="<%=request.getContextPath()%>/pages/dataset_home.jsp">M3 Import &amp; Data</a>
         <a href="<%=request.getContextPath()%>/pages/analysis.jsp" class="active">M1 &amp; M2 Analysis</a>
         <a href="<%=request.getContextPath()%>/export">M4 Export</a>
@@ -64,8 +64,8 @@
             </div>
 
             <div class="mode-row">
-                <button class="btn btn-primary" onclick="runM1Batch()">&#9654; Run Batch Analysis</button>
-                <button class="btn btn-success" id="m1RtBtn" onclick="toggleM1Realtime()">&#128225; Start Real-Time Stream</button>
+                <button class="btn btn-primary" onclick="runM1Batch()"> Run Batch Analysis</button>
+                <button class="btn btn-success" id="m1RtBtn" onclick="toggleM1Realtime()"> Start Real-Time Stream</button>
             </div>
 
             <!-- M1 Batch Results -->
@@ -89,7 +89,7 @@
                 <!-- Severity Summary -->
                 <div class="grid-2" style="margin-top:16px;">
                     <div class="card">
-                        <div class="card-title">&#128204; Severity Summary</div>
+                        <div class="card-title"> Severity Summary</div>
                         <table style="font-size:13px; width:100%;">
                             <thead><tr><th>Level</th><th>Records</th></tr></thead>
                             <tbody>
@@ -101,7 +101,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-title">&#128205; Top Alert Locations</div>
+                        <div class="card-title"> Top Alert Locations</div>
                         <div id="topLocations" style="font-size:12px; font-family:var(--font-mono);">
                             Run batch analysis to see top locations.
                         </div>
@@ -111,7 +111,7 @@
 
             <div class="grid-2" style="margin-top:20px;">
                 <div class="card">
-                    <div class="card-title">&#128680; Live Alert Counter</div>
+                    <div class="card-title"> Live Alert Counter</div>
                     <div class="violation-counter" id="m1LiveCount">0</div>
                     <div class="progress-info" id="m1Progress">Press Start Real-Time Stream to begin</div>
                     <div class="progress-bar-wrap">
@@ -119,7 +119,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-title">&#128203; Alert Stream Log</div>
+                    <div class="card-title"> Alert Stream Log</div>
                     <div class="stream-log" id="m1Log">
                         <div style="color:var(--text-muted);">Waiting for stream...</div>
                     </div>
@@ -142,15 +142,15 @@
             </div>
 
             <div class="mode-row">
-                <button class="btn btn-primary" onclick="runM2Batch()">&#9654; Run Batch Analysis</button>
-                <button class="btn btn-success" id="m2RtBtn" onclick="toggleM2Realtime()">&#128225; Start Real-Time Stream</button>
+                <button class="btn btn-primary" onclick="runM2Batch()"> Run Batch Analysis</button>
+                <button class="btn btn-success" id="m2RtBtn" onclick="toggleM2Realtime()"> Start Real-Time Stream</button>
             </div>
 
             <!-- M2 Batch Results -->
             <div id="m2BatchResult" style="display:none;">
                 <div class="comparison-grid">
                     <div class="country-card">
-                        <h4 class="my-color">&#127487;&#127486; Malaysia (MY)</h4>
+                        <h4 class="my-color"> Malaysia (MY)</h4>
                         <div class="stat-row"><span>Average rfh</span><span id="myAvg">-</span></div>
                         <div class="stat-row"><span>Max rfh</span><span id="myMax">-</span></div>
                         <div class="stat-row"><span>Min rfh</span><span id="myMin">-</span></div>
@@ -158,7 +158,7 @@
                         <div class="stat-row"><span style="color:var(--danger);">Anomaly Spikes</span><span id="myAnomalies" style="color:var(--danger);">-</span></div>
                     </div>
                     <div class="country-card">
-                        <h4 class="ph-color">&#127477;&#127469; Philippines (PH)</h4>
+                        <h4 class="ph-color"> Philippines (PH)</h4>
                         <div class="stat-row"><span>Average rfh</span><span id="phAvg">-</span></div>
                         <div class="stat-row"><span>Max rfh</span><span id="phMax">-</span></div>
                         <div class="stat-row"><span>Min rfh</span><span id="phMin">-</span></div>
@@ -172,7 +172,7 @@
             <!-- M2 Real-Time Panels -->
             <div class="grid-2" style="margin-top:20px;">
                 <div class="card">
-                    <div class="card-title">&#128200; Live Moving Average &amp; Highest-So-Far</div>
+                    <div class="card-title"> Live Moving Average &amp; Highest-So-Far</div>
                     <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
                         <div style="text-align:center;">
                             <div style="font-size:11px; color:var(--text-muted); margin-bottom:4px;">MY Moving Avg</div>
@@ -194,7 +194,7 @@
                     <div class="progress-info" id="m2Progress">Press Start Real-Time Stream to begin</div>
                 </div>
                 <div class="card">
-                    <div class="card-title">&#128203; Trend &amp; Anomaly Stream Log</div>
+                    <div class="card-title"> Trend &amp; Anomaly Stream Log</div>
                     <div class="stream-log" id="m2Log">
                         <div style="color:var(--text-muted);">Waiting for stream...</div>
                     </div>

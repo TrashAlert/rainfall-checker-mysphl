@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="${pageContext.request.contextPath}/" class="brand">&#127783; MY &amp; PH Rainfall</a>
+        <a href="${pageContext.request.contextPath}/" class="brand"> MY &amp; PH Rainfall</a>
         <a href="${pageContext.request.contextPath}/pages/dataset_home.jsp">M3 Import &amp; Data</a>
         <a href="${pageContext.request.contextPath}/pages/analysis.jsp">M1 &amp; M2 Analysis</a>
         <a href="${pageContext.request.contextPath}/export" class="active">M4 Export</a>
@@ -21,7 +21,7 @@
 
         <div class="grid-2">
             <div class="card">
-                <div class="card-title">&#8681; Generate Report</div>
+                <div class="card-title"> Generate Report</div>
 
                 <div class="form-group">
                     <label>Analysis to Export</label>
@@ -44,8 +44,8 @@
                 </div>
 
                 <div style="display:flex; gap:12px; margin-top:8px; flex-wrap:wrap;">
-                    <button class="btn btn-primary" onclick="downloadReport('csv')">&#8595; Download CSV</button>
-                    <button class="btn btn-success" onclick="downloadReport('json')">&#8595; Download JSON</button>
+                    <button class="btn btn-primary" onclick="downloadReport('csv')"> Download CSV</button>
+                    <button class="btn btn-success" onclick="downloadReport('json')"> Download JSON</button>
                 </div>
 
                 <div id="downloadMsg" class="alert alert-success" style="display:none; margin-top:16px;">
@@ -54,7 +54,7 @@
             </div>
 
             <div class="card">
-                <div class="card-title">&#128203; What's Included</div>
+                <div class="card-title"> What's Included</div>
                 <table style="font-size:13px; width:100%;">
                     <thead><tr><th>Module</th><th>Metric</th></tr></thead>
                     <tbody>
@@ -68,7 +68,7 @@
         </div>
 
         <div class="card">
-            <div class="card-title">&#128336; Export History</div>
+            <div class="card-title"> Export History</div>
             <c:choose>
                 <c:when test="${empty exportLogs}">
                     <div style="color:var(--text-muted);font-size:13px;padding:20px 0;text-align:center;">

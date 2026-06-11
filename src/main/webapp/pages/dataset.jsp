@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="${pageContext.request.contextPath}/" class="brand">&#127783; MY &amp; PH Rainfall</a>
+        <a href="${pageContext.request.contextPath}/" class="brand"> MY &amp; PH Rainfall</a>
         <a href="${pageContext.request.contextPath}/pages/dataset_home.jsp">M3 Import &amp; Data</a>
         <a href="${pageContext.request.contextPath}/pages/analysis.jsp">M1 &amp; M2 Analysis</a>
         <a href="${pageContext.request.contextPath}/export">M4 Export</a>
@@ -23,7 +23,7 @@
             &nbsp;|&nbsp; Page ${currentPage} of ${totalPages}
             &nbsp;|&nbsp;
             <a href="${pageContext.request.contextPath}/pages/dataset_home.jsp" style="color:var(--accent)">
-                &#8593; Import new CSV
+                 Import new CSV
             </a>
         </div>
 
@@ -37,7 +37,7 @@
                   onsubmit="return confirm('WARNING: This will permanently delete ALL ${totalCount} records. This cannot be undone. Continue?')">
                 <input type="hidden" name="action" value="deleteAll">
                 <button type="submit" class="btn btn-danger">
-                    &#128465; Delete Entire Dataset (${totalCount} records)
+                     Delete Entire Dataset (${totalCount} records)
                 </button>
             </form>
         </c:if>
